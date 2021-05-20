@@ -4,9 +4,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="main-view">
+<canvas class="liquid-lights" id="canv"></canvas>
+<div class="black-mask"></div>
 <a href="https://wind-waves.github.io/520/">
-<div class="canvas">
-    <svg height="130" width="130">
+<div class="svg-canvas">
+    <svg class="heart-shape" viewBox="0 0 130 130">
        <filter id="inset-shadow" x="-50%" y="-50%" width="200%" height="200%">
         <feComponentTransfer in=SourceAlpha>
           <feFuncA type="table" tableValues="1 0" />
@@ -27,5 +30,8 @@
     </svg>
 </div>
 </a>
+</div>
 </body>
+<script src="bg.js">
+</script>
 </html>
